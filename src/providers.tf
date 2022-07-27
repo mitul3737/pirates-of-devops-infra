@@ -8,6 +8,5 @@ terraform {
 }
 
 provider "aws" {
-  alias  = "piratesofdevops"
   region = "ap-southeast-1"
 }

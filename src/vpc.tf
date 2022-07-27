@@ -1,6 +1,5 @@
 module "vpc" {
   source = "../modules/vpc"
-  providers = { aws = aws.piratesofdevops }
 
   vpc_cidr_block  = local.vpc-cidr
   domain_name     = local.vpc-domain-name
