@@ -16,12 +16,12 @@ provider "helm" {
   kubernetes {
     host                   = module.eks.endpoint
     cluster_ca_certificate = base64decode(module.eks.certificate_authority[0].data)
-    token                  = data.aws_eks_cluster_auth.medlify.token
+    token                  = data.aws_eks_cluster_auth.piratesofdevops.token
   }
 }
 
 provider "kubernetes" {
   host                   = module.eks.endpoint
   cluster_ca_certificate = base64decode(module.eks.certificate_authority[0].data)
-  token                  = data.aws_eks_cluster_auth.medlify.token
+  token                  = data.aws_eks_cluster_auth.piratesofdevops.token
 }

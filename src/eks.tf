@@ -26,7 +26,7 @@ module "eks" {
   ]
 }
 
-data "aws_eks_cluster_auth" "medlify" {
+data "aws_eks_cluster_auth" "piratesofdevops" {
   name = module.eks.cluster_name
 }
 
